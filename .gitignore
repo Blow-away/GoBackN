@@ -9,3 +9,4 @@
 .idea
 *.docx
 *.doc
+/cmake-build-debug
