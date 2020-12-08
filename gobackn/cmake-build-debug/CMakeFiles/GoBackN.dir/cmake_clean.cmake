@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/GoBackN.dir/main.cpp.o"
+  "CMakeFiles/GoBackN.dir/1.cpp.o"
   "CMakeFiles/GoBackN.dir/protocol/go_back_n.cpp.o"
   "CMakeFiles/GoBackN.dir/socket/socket_udp.cpp.o"
   "GoBackN"

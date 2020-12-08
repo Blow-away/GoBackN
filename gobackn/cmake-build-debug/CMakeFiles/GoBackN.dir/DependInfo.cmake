@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/zcy/桌面/GoBackN/gobackn/main.cpp" "/home/zcy/桌面/GoBackN/gobackn/cmake-build-debug/CMakeFiles/GoBackN.dir/main.cpp.o"
+  "/home/zcy/桌面/GoBackN/gobackn/1.cpp" "/home/zcy/桌面/GoBackN/gobackn/cmake-build-debug/CMakeFiles/GoBackN.dir/1.cpp.o"
   "/home/zcy/桌面/GoBackN/gobackn/protocol/go_back_n.cpp" "/home/zcy/桌面/GoBackN/gobackn/cmake-build-debug/CMakeFiles/GoBackN.dir/protocol/go_back_n.cpp.o"
   "/home/zcy/桌面/GoBackN/gobackn/socket/socket_udp.cpp" "/home/zcy/桌面/GoBackN/gobackn/cmake-build-debug/CMakeFiles/GoBackN.dir/socket/socket_udp.cpp.o"
   )

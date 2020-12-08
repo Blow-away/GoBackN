@@ -111,44 +111,84 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named GoBackN
+# Target rules for targets named server
 
 # Build rule for target.
-GoBackN: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 GoBackN
-.PHONY : GoBackN
+server: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 server
+.PHONY : server
 
 # fast build rule for target.
-GoBackN/fast:
-	$(MAKE) -f CMakeFiles/GoBackN.dir/build.make CMakeFiles/GoBackN.dir/build
-.PHONY : GoBackN/fast
+server/fast:
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/build
+.PHONY : server/fast
 
-main.o: main.cpp.o
+#=============================================================================
+# Target rules for targets named client
 
-.PHONY : main.o
+# Build rule for target.
+client: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 client
+.PHONY : client
+
+# fast build rule for target.
+client/fast:
+	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/build
+.PHONY : client/fast
+
+1.o: 1.cpp.o
+
+.PHONY : 1.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) -f CMakeFiles/GoBackN.dir/build.make CMakeFiles/GoBackN.dir/main.cpp.o
-.PHONY : main.cpp.o
+1.cpp.o:
+	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/1.cpp.o
+.PHONY : 1.cpp.o
 
-main.i: main.cpp.i
+1.i: 1.cpp.i
 
-.PHONY : main.i
+.PHONY : 1.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles/GoBackN.dir/build.make CMakeFiles/GoBackN.dir/main.cpp.i
-.PHONY : main.cpp.i
+1.cpp.i:
+	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/1.cpp.i
+.PHONY : 1.cpp.i
 
-main.s: main.cpp.s
+1.s: 1.cpp.s
 
-.PHONY : main.s
+.PHONY : 1.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles/GoBackN.dir/build.make CMakeFiles/GoBackN.dir/main.cpp.s
-.PHONY : main.cpp.s
+1.cpp.s:
+	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/1.cpp.s
+.PHONY : 1.cpp.s
+
+2.o: 2.cpp.o
+
+.PHONY : 2.o
+
+# target to build an object file
+2.cpp.o:
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/2.cpp.o
+.PHONY : 2.cpp.o
+
+2.i: 2.cpp.i
+
+.PHONY : 2.i
+
+# target to preprocess a source file
+2.cpp.i:
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/2.cpp.i
+.PHONY : 2.cpp.i
+
+2.s: 2.cpp.s
+
+.PHONY : 2.s
+
+# target to generate assembly for a file
+2.cpp.s:
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/2.cpp.s
+.PHONY : 2.cpp.s
 
 protocol/go_back_n.o: protocol/go_back_n.cpp.o
 
@@ -156,7 +196,8 @@ protocol/go_back_n.o: protocol/go_back_n.cpp.o
 
 # target to build an object file
 protocol/go_back_n.cpp.o:
-	$(MAKE) -f CMakeFiles/GoBackN.dir/build.make CMakeFiles/GoBackN.dir/protocol/go_back_n.cpp.o
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/protocol/go_back_n.cpp.o
+	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/protocol/go_back_n.cpp.o
 .PHONY : protocol/go_back_n.cpp.o
 
 protocol/go_back_n.i: protocol/go_back_n.cpp.i
@@ -165,7 +206,8 @@ protocol/go_back_n.i: protocol/go_back_n.cpp.i
 
 # target to preprocess a source file
 protocol/go_back_n.cpp.i:
-	$(MAKE) -f CMakeFiles/GoBackN.dir/build.make CMakeFiles/GoBackN.dir/protocol/go_back_n.cpp.i
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/protocol/go_back_n.cpp.i
+	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/protocol/go_back_n.cpp.i
 .PHONY : protocol/go_back_n.cpp.i
 
 protocol/go_back_n.s: protocol/go_back_n.cpp.s
@@ -174,7 +216,8 @@ protocol/go_back_n.s: protocol/go_back_n.cpp.s
 
 # target to generate assembly for a file
 protocol/go_back_n.cpp.s:
-	$(MAKE) -f CMakeFiles/GoBackN.dir/build.make CMakeFiles/GoBackN.dir/protocol/go_back_n.cpp.s
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/protocol/go_back_n.cpp.s
+	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/protocol/go_back_n.cpp.s
 .PHONY : protocol/go_back_n.cpp.s
 
 socket/socket_udp.o: socket/socket_udp.cpp.o
@@ -183,7 +226,8 @@ socket/socket_udp.o: socket/socket_udp.cpp.o
 
 # target to build an object file
 socket/socket_udp.cpp.o:
-	$(MAKE) -f CMakeFiles/GoBackN.dir/build.make CMakeFiles/GoBackN.dir/socket/socket_udp.cpp.o
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/socket/socket_udp.cpp.o
+	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/socket/socket_udp.cpp.o
 .PHONY : socket/socket_udp.cpp.o
 
 socket/socket_udp.i: socket/socket_udp.cpp.i
@@ -192,7 +236,8 @@ socket/socket_udp.i: socket/socket_udp.cpp.i
 
 # target to preprocess a source file
 socket/socket_udp.cpp.i:
-	$(MAKE) -f CMakeFiles/GoBackN.dir/build.make CMakeFiles/GoBackN.dir/socket/socket_udp.cpp.i
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/socket/socket_udp.cpp.i
+	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/socket/socket_udp.cpp.i
 .PHONY : socket/socket_udp.cpp.i
 
 socket/socket_udp.s: socket/socket_udp.cpp.s
@@ -201,7 +246,8 @@ socket/socket_udp.s: socket/socket_udp.cpp.s
 
 # target to generate assembly for a file
 socket/socket_udp.cpp.s:
-	$(MAKE) -f CMakeFiles/GoBackN.dir/build.make CMakeFiles/GoBackN.dir/socket/socket_udp.cpp.s
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/socket/socket_udp.cpp.s
+	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/socket/socket_udp.cpp.s
 .PHONY : socket/socket_udp.cpp.s
 
 # Help Target
@@ -211,11 +257,15 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
+	@echo "... server"
 	@echo "... edit_cache"
-	@echo "... GoBackN"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... client"
+	@echo "... 1.o"
+	@echo "... 1.i"
+	@echo "... 1.s"
+	@echo "... 2.o"
+	@echo "... 2.i"
+	@echo "... 2.s"
 	@echo "... protocol/go_back_n.o"
 	@echo "... protocol/go_back_n.i"
 	@echo "... protocol/go_back_n.s"

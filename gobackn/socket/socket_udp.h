@@ -1,7 +1,8 @@
 /**
  * @copybrief
- * The MIT License (MIT)
- * Copyright(c) 2020-2020 Blow-away
+ *
+ * MIT License
+ * Copyright (c) 2020 chui
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
  * in the Software without restriction, including without limitation the rights
@@ -19,6 +20,7 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
+ *
  * */
 
 #ifndef GOBACKN_SOCKET_UDP_H
@@ -29,17 +31,20 @@
 using std::string;
 class socket_udp {
 public:
-    socket_udp(const string& addr, const unsigned int port);
+    socket_udp(const string& source_addr, const unsigned int source_port,
+            const string& target_addr, const unsigned int target_port);
     ~socket_udp();
-    void write(const char* buff,const size_t& len);
-    size_t read(char* buff,const size_t& len);
+    void write(const char* buff,const int& len);
+    size_t read(char* buff,const int& len);
     void close();
 
 private:
 #ifdef PLATFORM_LINUX
     int _socket_id;
-    in_port_t _port;
-    in_addr_t _addr;
+    in_port_t _source_port;
+    in_addr_t _source_addr;
+    in_port_t _target_port;
+    in_addr_t _target_addr;
 #endif //PLATFORM_LINUX
 };
 

@@ -1,1 +1,1 @@
-/usr/bin/c++  -g   CMakeFiles/GoBackN.dir/main.cpp.o CMakeFiles/GoBackN.dir/protocol/go_back_n.cpp.o CMakeFiles/GoBackN.dir/socket/socket_udp.cpp.o  -o GoBackN 
+/usr/bin/c++  -g   CMakeFiles/GoBackN.dir/protocol/go_back_n.cpp.o CMakeFiles/GoBackN.dir/socket/socket_udp.cpp.o CMakeFiles/GoBackN.dir/1.cpp.o  -o GoBackN  -lpthread 

@@ -1,7 +1,8 @@
 /**
  * @copybrief
- * The MIT License (MIT)
- * Copyright(c) 2020-2020 Blow-away
+ *
+ * MIT License
+ * Copyright (c) 2020 chui
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
  * in the Software without restriction, including without limitation the rights
@@ -19,6 +20,7 @@
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
+ *
  * */
 
 #ifndef GOBACKN_GO_BACK_N_H
@@ -27,25 +29,34 @@
 #include "../socket/socket_udp.h"
 #include <queue>
 #include <iostream>
+#include "timer.h"
 class go_back_n {
-    static constexpr int MAX_SEQ = 7;
     static constexpr int MAX_BUFFER = 1024;
     using seq_nr = unsigned;
 public:
-    go_back_n(const string &addr,
-              const unsigned int port);
+    static constexpr int MAX_SEQ = 7;
+    go_back_n(const string &source_addr,
+              const unsigned int source_port, const string &target_addr,
+              const unsigned int target_port);
+
     void start();
+
     ~go_back_n();
 
 private:
-    struct data{
-        seq_nr _seq;
-        seq_nr _ack;
-        string _data;
+    struct data {
+        int _seq = -1;
+        int _ack = -1;
+        string _data = "";
     };
-    void send(const data &data);
 
-    void receive(data &data);
+    void send(const data &);
+
+    void receive(data &);
+
+    void timeout();
+
+    void send_data(struct data &);
 
     static constexpr bool between(const seq_nr a, const seq_nr b, const seq_nr c) {
         return ((a <= b) && (b < c)) || ((c < a) && (a <= b)) || ((b < c) && (c < a));
@@ -55,11 +66,14 @@ private:
     unsigned _next_data_to_send;
     unsigned _ack_expected;
     seq_nr _nbuffered;
-    seq_nr _buffer_index; // 指向第一个可以发送的buffer
 
     std::queue<string> _datas;
-    string _buffer[MAX_SEQ+1];
+    struct data _buffer[MAX_SEQ + 1];
     socket_udp _socket;
+    timer timers[MAX_SEQ+1];
+    void start_timer(unsigned int next_data_to_send);
+    void stop_timer(unsigned int);
+
 };
 
 

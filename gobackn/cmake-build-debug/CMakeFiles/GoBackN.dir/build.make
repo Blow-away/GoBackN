@@ -57,22 +57,9 @@ include CMakeFiles/GoBackN.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/GoBackN.dir/flags.make
 
-CMakeFiles/GoBackN.dir/main.cpp.o: CMakeFiles/GoBackN.dir/flags.make
-CMakeFiles/GoBackN.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zcy/桌面/GoBackN/gobackn/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/GoBackN.dir/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GoBackN.dir/main.cpp.o -c /home/zcy/桌面/GoBackN/gobackn/main.cpp
-
-CMakeFiles/GoBackN.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GoBackN.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zcy/桌面/GoBackN/gobackn/main.cpp > CMakeFiles/GoBackN.dir/main.cpp.i
-
-CMakeFiles/GoBackN.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GoBackN.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zcy/桌面/GoBackN/gobackn/main.cpp -o CMakeFiles/GoBackN.dir/main.cpp.s
-
 CMakeFiles/GoBackN.dir/protocol/go_back_n.cpp.o: CMakeFiles/GoBackN.dir/flags.make
 CMakeFiles/GoBackN.dir/protocol/go_back_n.cpp.o: ../protocol/go_back_n.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zcy/桌面/GoBackN/gobackn/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/GoBackN.dir/protocol/go_back_n.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zcy/桌面/GoBackN/gobackn/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/GoBackN.dir/protocol/go_back_n.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GoBackN.dir/protocol/go_back_n.cpp.o -c /home/zcy/桌面/GoBackN/gobackn/protocol/go_back_n.cpp
 
 CMakeFiles/GoBackN.dir/protocol/go_back_n.cpp.i: cmake_force
@@ -85,7 +72,7 @@ CMakeFiles/GoBackN.dir/protocol/go_back_n.cpp.s: cmake_force
 
 CMakeFiles/GoBackN.dir/socket/socket_udp.cpp.o: CMakeFiles/GoBackN.dir/flags.make
 CMakeFiles/GoBackN.dir/socket/socket_udp.cpp.o: ../socket/socket_udp.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zcy/桌面/GoBackN/gobackn/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/GoBackN.dir/socket/socket_udp.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zcy/桌面/GoBackN/gobackn/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/GoBackN.dir/socket/socket_udp.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GoBackN.dir/socket/socket_udp.cpp.o -c /home/zcy/桌面/GoBackN/gobackn/socket/socket_udp.cpp
 
 CMakeFiles/GoBackN.dir/socket/socket_udp.cpp.i: cmake_force
@@ -96,18 +83,31 @@ CMakeFiles/GoBackN.dir/socket/socket_udp.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GoBackN.dir/socket/socket_udp.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zcy/桌面/GoBackN/gobackn/socket/socket_udp.cpp -o CMakeFiles/GoBackN.dir/socket/socket_udp.cpp.s
 
+CMakeFiles/GoBackN.dir/1.cpp.o: CMakeFiles/GoBackN.dir/flags.make
+CMakeFiles/GoBackN.dir/1.cpp.o: ../1.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zcy/桌面/GoBackN/gobackn/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/GoBackN.dir/1.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GoBackN.dir/1.cpp.o -c /home/zcy/桌面/GoBackN/gobackn/1.cpp
+
+CMakeFiles/GoBackN.dir/1.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GoBackN.dir/1.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zcy/桌面/GoBackN/gobackn/1.cpp > CMakeFiles/GoBackN.dir/1.cpp.i
+
+CMakeFiles/GoBackN.dir/1.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GoBackN.dir/1.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zcy/桌面/GoBackN/gobackn/1.cpp -o CMakeFiles/GoBackN.dir/1.cpp.s
+
 # Object files for target GoBackN
 GoBackN_OBJECTS = \
-"CMakeFiles/GoBackN.dir/main.cpp.o" \
 "CMakeFiles/GoBackN.dir/protocol/go_back_n.cpp.o" \
-"CMakeFiles/GoBackN.dir/socket/socket_udp.cpp.o"
+"CMakeFiles/GoBackN.dir/socket/socket_udp.cpp.o" \
+"CMakeFiles/GoBackN.dir/1.cpp.o"
 
 # External object files for target GoBackN
 GoBackN_EXTERNAL_OBJECTS =
 
-GoBackN: CMakeFiles/GoBackN.dir/main.cpp.o
 GoBackN: CMakeFiles/GoBackN.dir/protocol/go_back_n.cpp.o
 GoBackN: CMakeFiles/GoBackN.dir/socket/socket_udp.cpp.o
+GoBackN: CMakeFiles/GoBackN.dir/1.cpp.o
 GoBackN: CMakeFiles/GoBackN.dir/build.make
 GoBackN: CMakeFiles/GoBackN.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/zcy/桌面/GoBackN/gobackn/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable GoBackN"
