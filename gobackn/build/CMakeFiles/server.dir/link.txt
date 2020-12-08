@@ -1,1 +1,0 @@
-/usr/bin/c++     CMakeFiles/server.dir/protocol/go_back_n.cpp.o CMakeFiles/server.dir/socket/socket_udp.cpp.o CMakeFiles/server.dir/2.cpp.o  -o server -lpthread 

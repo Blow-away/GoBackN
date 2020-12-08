@@ -1,4 +1,0 @@
-/home/zcy/桌面/GoBackN/gobackn/build/CMakeFiles/edit_cache.dir
-/home/zcy/桌面/GoBackN/gobackn/build/CMakeFiles/client.dir
-/home/zcy/桌面/GoBackN/gobackn/build/CMakeFiles/rebuild_cache.dir
-/home/zcy/桌面/GoBackN/gobackn/build/CMakeFiles/server.dir

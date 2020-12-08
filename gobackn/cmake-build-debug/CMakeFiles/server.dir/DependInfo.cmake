@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/zcy/桌面/GoBackN/gobackn/2.cpp" "/home/zcy/桌面/GoBackN/gobackn/cmake-build-debug/CMakeFiles/server.dir/2.cpp.o"
-  "/home/zcy/桌面/GoBackN/gobackn/protocol/go_back_n.cpp" "/home/zcy/桌面/GoBackN/gobackn/cmake-build-debug/CMakeFiles/server.dir/protocol/go_back_n.cpp.o"
-  "/home/zcy/桌面/GoBackN/gobackn/socket/socket_udp.cpp" "/home/zcy/桌面/GoBackN/gobackn/cmake-build-debug/CMakeFiles/server.dir/socket/socket_udp.cpp.o"
+  "C:/Users/zhao chenyang/Desktop/GoBackN/gobackn/2.cpp" "C:/Users/zhao chenyang/Desktop/GoBackN/gobackn/cmake-build-debug/CMakeFiles/server.dir/2.cpp.obj"
+  "C:/Users/zhao chenyang/Desktop/GoBackN/gobackn/protocol/go_back_n.cpp" "C:/Users/zhao chenyang/Desktop/GoBackN/gobackn/cmake-build-debug/CMakeFiles/server.dir/protocol/go_back_n.cpp.obj"
+  "C:/Users/zhao chenyang/Desktop/GoBackN/gobackn/socket/socket_udp.cpp" "C:/Users/zhao chenyang/Desktop/GoBackN/gobackn/cmake-build-debug/CMakeFiles/server.dir/socket/socket_udp.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

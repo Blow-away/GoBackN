@@ -1,8 +1,10 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/server.dir/2.cpp.o"
-  "CMakeFiles/server.dir/protocol/go_back_n.cpp.o"
-  "CMakeFiles/server.dir/socket/socket_udp.cpp.o"
-  "server"
+  "CMakeFiles/server.dir/2.cpp.obj"
+  "CMakeFiles/server.dir/protocol/go_back_n.cpp.obj"
+  "CMakeFiles/server.dir/socket/socket_udp.cpp.obj"
+  "libserver.dll.a"
+  "server.exe"
+  "server.exe.manifest"
   "server.pdb"
 )
 
